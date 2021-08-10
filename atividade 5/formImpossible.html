@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulário</title>
+    </head>
+    <body>
+        <header>
+            <h1>Dados Cadastrais</h1>
+        </header>
+        <form action="#" name="envia" method="post" enctype="multipart/form-data">
+            <fieldset style="width: 25%;">
+                <legend>Formulário</legend>
+                <label for="nome">Nome completo: </label>
+                <input id="nome" style="width: 300px;" type="text" name="nome"><br><br><br>
+                <label for="data">Data de nascimento: </label>
+                <input id="data" type="date" name="data"><br><br>
+                <section style="display: inline-block;">
+                    <label for="estados">Selecione o estado em que mora:</label><br><br>
+                    <select id="estados">
+                        <option value="Alagoas">Alagoas</option>
+                        <option value="Bahia">Bahia</option>
+                        <option value="Ceará">Ceará</option>
+                        <option value="Maranhão">Maranhão</option>
+                        <option value="Paraíba">Paraíba</option>
+                        <option value="Piauí">Piauí</option>
+                        <option value="Pernambuco">Pernambuco</option>
+                        <option value="Rio Grande do Norte">Rio Grande do Norte</option>
+                        <option value="Sergipe">Sergipe</option>
+                        <option value="Mato Grosso">Mato Grosso</option>
+                        <option value="Rio de Janeiro">Rio de Janeiro</option>
+                        <option value="Minas Gerais">Minhas Gerais</option>
+                        <option value="São paulo">São Paulo</option>
+                        <option value="Paraná">Paraná</option>
+                        <option value="Santa Catarina">Santa Catarina</option>
+                        <option selected hidden>Estado</option>
+                    </select>
+                    <br><br><br>
+                    <label for="questao">5 + 4 é ?</label>
+                    <input id="questao" type="number" style="width: 50px;">
+                </section>
+                <section style="display: inline-block; margin-left: 20%;">
+                <label>Gênero:</label><br>
+                <input id="genero1" type="radio" value="feminino" name="feminino" checked>
+                <label for="genero1">Feminino</label><br>
+                <input id="genero2" type="radio" value="masculino" name="masculino">
+                <label for="genero2">Masculino</label><br>
+                <input id="genero3" type="radio" value="outro" name="outro">
+                <label for="genero3">Outro</label><br><br>
+                <input type="submit" id="button" value="Salvar">
+                </section>
+            </fieldset> 
+        </form>
+    </body>
+</html>
